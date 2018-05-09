@@ -1,4 +1,4 @@
-{% set version = "0.0.10" %}
+{% set version = "0.0.11" %}
 
 package:
   name: xarray-topo
@@ -6,8 +6,8 @@ package:
 
 source:
   fn: xarray-topo-{{ version }}.tar.gz
-  url: https://gitext.gfz-potsdam.de/sec55-public/xarray-topo/repository/v{{ version }}/archive.tar.gz
-  sha256: a73aaba348ce3b7cc77e16fae902f2c02c3914bea89ed520e550a2e78ca1eedb
+  url: https://gitext.gfz-potsdam.de/sec55-public/xarray-topo/repository/{{ version }}/archive.tar.gz
+  sha256: ffba1fcb86332945419ac01afd04b6ccfe45c45cd83bcfa15580d80f0097ce6c
 
 build:
   number: 0
@@ -21,9 +21,9 @@ requirements:
   run:
     - python
     - numpy
-    - xarray >=0.8.0
+    - xarray >=0.10.0
+    - xarray-simlab >=0.2.0
     - numba >=0.35.0
-    - xarray-simlab
 
 test:
   imports:
