@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://gitext.gfz-potsdam.de/sec55-public/xarray-topo/repository/{{ version }}/archive.tar.gz
-  sha256: ffba1fcb86332945419ac01afd04b6ccfe45c45cd83bcfa15580d80f0097ce6c
+  sha256: af555e0aa9beecd2bb8c8ec74e8673bb257e001993b89029aec760d2a7bde486
 
 build:
   number: 1000
