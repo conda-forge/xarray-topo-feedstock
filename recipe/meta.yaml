@@ -5,21 +5,20 @@ package:
   version: {{ version }}
 
 source:
-  fn: xarray-topo-{{ version }}.tar.gz
   url: https://gitext.gfz-potsdam.de/sec55-public/xarray-topo/repository/{{ version }}/archive.tar.gz
-  sha256: ffba1fcb86332945419ac01afd04b6ccfe45c45cd83bcfa15580d80f0097ce6c
+  sha256: af555e0aa9beecd2bb8c8ec74e8673bb257e001993b89029aec760d2a7bde486
 
 build:
-  number: 0
-  skip: True  # [py2k]
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1000
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
 
 requirements:
-  build:
-    - python
-    - setuptools
+  host:
+    - python >=3
+    - pip
   run:
-    - python
+    - python >=3
     - numpy
     - xarray >=0.10.0
     - xarray-simlab >=0.2.0
