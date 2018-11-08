@@ -14,9 +14,8 @@ Summary: xarray extension for for topographic analysis and modeling
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/xarray-topo-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/xarray-topo-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/xarray-topo-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/xarray-topo-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/xarray-topo-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/xarray-topo-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/xarray-topo-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/xarray-topo-feedstock)
 
 Current release info
 ====================
